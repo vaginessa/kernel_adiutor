@@ -1,14 +1,10 @@
 # KernelAdiutor
 
-[![Build Status](https://travis-ci.org/yoinx/kernel_adiutor.svg?branch=master)](https://travis-ci.org/yoinx/kernel_adiutor)
+Aesthetically pleasing Kernel Adiutor mod.
 
-![Screenshot](https://raw.githubusercontent.com/Grarak/KernelAdiutor/master/screenshots/screenshot.png)
-
-* [Join Google+ Community](https://plus.google.com/communities/103764146519204710337)
-
-## Kernel Downloader
-
-This is a feature which allows the user to download different custom kernels for their device. To add more kernel the developers have to add support by their own. I wrote up a [documentation](https://github.com/Grarak/KernelAdiutor/wiki/Adding-Download-Support) which explains how to do this.
+```
+This application was modified for personal use and with due respect to the original creator of Kernel Adiutor.
+```
 
 ## Report a bug or request a feature
 
@@ -32,7 +28,7 @@ You can report a bug or request a feature by [opening an issue](https://github.c
 Clone the project and come in:
 
 ``` bash
-$ git clone git://github.com/yoinx/kernel_adiutor.git
+$ git clone git://github.com/thunderbottom/kernel_adiutor.git
 $ cd KernelAdiutor
 $ ./gradlew build
 ```

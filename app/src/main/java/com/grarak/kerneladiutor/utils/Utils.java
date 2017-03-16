@@ -88,7 +88,7 @@ import java.util.Set;
  */
 public class Utils implements Constants {
 
-    public static boolean DARKTHEME = false;
+    public static boolean DARKTHEME = true;
 
     public static boolean hasCMSDK() {
         return cyanogenmod.os.Build.CM_VERSION.SDK_INT >= cyanogenmod.os.Build.CM_VERSION_CODES.APRICOT;
@@ -173,8 +173,7 @@ public class Utils implements Constants {
     }
 
     public static boolean isRTL(Context context) {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1
-                && context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
+        return context.getResources().getConfiguration().getLayoutDirection() == View.LAYOUT_DIRECTION_RTL;
     }
 
     public static Bitmap scaleDownBitmap(Bitmap bitmap, int maxWidth, int maxHeight) {
@@ -440,7 +439,7 @@ public class Utils implements Constants {
     }
 
     public static boolean isTV(Context context) {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR2 && ((UiModeManager) context
+        return ((UiModeManager) context
                 .getSystemService(Context.UI_MODE_SERVICE))
                 .getCurrentModeType() == Configuration.UI_MODE_TYPE_TELEVISION;
     }
